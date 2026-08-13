@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Watch This Move LLC</title>
+<meta name="description" content="Watch This Move LLC is an independent game studio in North Carolina making games you play with your whole body. Our first title: The 14th Club, real-swing golf for iPhone.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A1A10'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%23F5C518' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#0A1A10; --cream:#F2EFE6; --cream-dim:rgba(242,239,230,.62);
+    --green:#2D6E2D; --green-bright:#7CE08A; --gold:#F5C518;
+    --card:rgba(23,57,31,.92); --hairline:rgba(255,255,255,.10);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--ink); color:var(--cream);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; line-height:1.65;
+    min-height:100vh; display:flex; flex-direction:column;
+  }
+  a{color:var(--green-bright); text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:640px; margin:0 auto; padding:0 24px; width:100%}
+
+  header{padding:96px 0 56px; text-align:center;
+    background:
+      radial-gradient(1100px 460px at 50% -140px, rgba(45,110,45,.32), transparent 70%),
+      var(--ink);}
+  .mark{font-family:'New York',ui-serif,Georgia,'Times New Roman',serif;
+    font-size:15px; font-weight:600; letter-spacing:.34em; text-transform:uppercase;
+    color:var(--gold); margin-bottom:18px}
+  h1{font-family:'New York',ui-serif,Georgia,'Times New Roman',serif;
+     font-size:clamp(34px,7vw,52px); font-weight:600; letter-spacing:.2px;
+     line-height:1.08}
+  .tagline{margin-top:16px; font-size:clamp(17px,3.2vw,20px); color:var(--cream-dim);
+    max-width:440px; margin-left:auto; margin-right:auto}
+
+  main{flex:1}
+  section{padding:48px 0; border-top:1px solid var(--hairline)}
+  h2{font-size:14px; font-weight:800; letter-spacing:.14em; text-transform:uppercase;
+     color:var(--cream-dim); margin-bottom:22px}
+  .card{background:var(--card); border:1px solid var(--hairline); border-radius:18px;
+    padding:26px 28px}
+  .card h3{font-family:'New York',ui-serif,Georgia,serif; font-size:24px;
+    font-weight:600; margin-bottom:6px}
+  .card .sub{color:var(--gold); font-weight:600; font-size:15px; margin-bottom:10px}
+  .card p{color:var(--cream-dim); font-size:16px}
+  .card .go{display:inline-block; margin-top:16px; background:var(--gold); color:#173118;
+    font-weight:800; font-size:15px; padding:11px 26px; border-radius:100px}
+  .card .go:hover{text-decoration:none; filter:brightness(1.06)}
+
+  .contact p{color:var(--cream-dim); font-size:16px}
+
+  footer{padding:40px 0 56px; border-top:1px solid var(--hairline);
+    text-align:center; color:var(--cream-dim); font-size:14px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="mark">Watch This Move</p>
+    <h1>Games you play with<br>your whole body.</h1>
+    <p class="tagline">Watch This Move LLC is an independent game studio in
+    North Carolina. We build games where real motion is the controller.</p>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>Now on the tee</h2>
+      <div class="card">
+        <h3>The 14th Club</h3>
+        <p class="sub">Real-swing golf for iPhone</p>
+        <p>Grip your phone like a golf club, address the ball, and swing — the game
+        reads your real tempo and release and turns them into ball flight. Eight
+        championship courses, pass-and-play for four, and a free front nine for
+        everyone. No ads, no coins, one price forever.</p>
+        <a class="go" href="https://the14thclub.com">Visit the14thclub.com</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Press, partnerships, and player support:
+      <a href="mailto:derek@watchthismove.com">derek@watchthismove.com</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Watch This Move LLC · North Carolina, USA</p>
+  </div>
+</footer>
+
+</body>
+</html>
