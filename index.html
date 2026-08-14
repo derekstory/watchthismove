@@ -42,6 +42,13 @@
      color:var(--cream-dim); margin-bottom:22px}
   .card{background:var(--card); border:1px solid var(--hairline); border-radius:18px;
     padding:26px 28px}
+  .card .game{display:flex; gap:24px; align-items:flex-start}
+  .card .crest{width:104px; height:auto; flex:0 0 auto; margin-top:4px;
+    filter:drop-shadow(0 8px 20px rgba(0,0,0,.4))}
+  @media (max-width:540px){
+    .card .game{flex-direction:column; align-items:center; text-align:center}
+    .card .crest{width:120px}
+  }
   .card h3{font-family:'New York',ui-serif,Georgia,serif; font-size:24px;
     font-weight:600; margin-bottom:6px}
   .card .sub{color:var(--gold); font-weight:600; font-size:15px; margin-bottom:10px}
@@ -81,13 +88,18 @@
     <div class="wrap">
       <h2>Now on the tee</h2>
       <div class="card">
-        <h3>The 14th Club</h3>
-        <p class="sub">Real-swing golf for iPhone</p>
-        <p>Grip your phone like a golf club, address the ball, and swing — the game
-        reads your real tempo and release and turns them into ball flight. Eight
-        championship courses, pass-and-play for four, and a free front nine for
-        everyone. No ads, no coins, one price forever.</p>
-        <a class="go" href="https://the14thclub.com">Visit the14thclub.com</a>
+        <div class="game">
+          <img class="crest" src="/crest-14thclub.png" alt="The 14th Club crest" width="104">
+          <div>
+            <h3>The 14th Club</h3>
+            <p class="sub">Real-swing golf for iPhone</p>
+            <p>Grip your phone like a golf club, address the ball, and swing — the game
+            reads your real tempo and release and turns them into ball flight. Eight
+            championship courses, pass-and-play for four, and a free front nine for
+            everyone. No ads, no coins, one price forever.</p>
+            <a class="go" href="https://the14thclub.com">Visit the14thclub.com</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
