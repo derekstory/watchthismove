@@ -75,25 +75,18 @@
     text-align:center; color:var(--cream-dim); font-size:14px}
   footer nav{margin-bottom:12px}
   footer nav a{margin:0 12px; color:var(--cream)}
+  @font-face{font-family:ClubArchivo;src:url(/fonts/Archivo-SemiBold.ttf);font-weight:600;font-display:swap}
+  @font-face{font-family:ClubArchivo;src:url(/fonts/Archivo-Bold.ttf);font-weight:700 900;font-display:swap}
+  .club-feature{font-family:ClubArchivo,system-ui,sans-serif;font-weight:600;background:#142C38;border-color:#526777;color:#F4EFE2}
+  .club-feature .game{display:block}
+  .club-feature .club-wordmark{display:block;width:min(100%,280px);height:auto;margin:0 auto 28px}
+  .club-feature .sub{color:#E0C387}
+  .club-feature p{color:#C3CFD5}
+  .club-feature .go{background:#F4EFE2;color:#142C38;border:1px solid #526777}
+  .club-feature a:focus-visible{outline:3px solid #E0C387;outline-offset:5px}
 </style>
 </head>
 <body>
-<!-- Match ClubhouseCrest.shader's green ink multipliers; preserve ivory, brass and alpha. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" style="position:absolute;pointer-events:none">
-  <defs>
-    <filter id="clubhouse-crest" color-interpolation-filters="sRGB">
-      <!-- Both green-minus-red and green-minus-blue must select green ink. -->
-      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -20 20 0 0 -0.3" result="greenRed"/>
-      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 20 -20 0 -0.3" result="greenBlue"/>
-      <feComposite in="greenRed" in2="greenBlue" operator="in" result="greenMask"/>
-      <feColorMatrix in="SourceGraphic" type="matrix" values=".45 0 0 0 0  0 .42 0 0 0  0 0 .50 0 0  0 0 0 1 0" result="darkInk"/>
-      <feComposite in="darkInk" in2="greenMask" operator="in" result="greenInk"/>
-      <feComposite in="SourceGraphic" in2="greenMask" operator="out" result="details"/>
-      <feComposite in="greenInk" in2="details" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
-    </filter>
-  </defs>
-</svg>
-
 <header>
   <div class="wrap">
     <img class="wm" src="/wm-mark.png" alt="Watch This Move monogram" width="190">
@@ -108,11 +101,11 @@
   <section>
     <div class="wrap">
       <h2 class="soon">Coming soon to the App&nbsp;Store</h2>
-      <div class="card">
+      <div class="card club-feature">
         <div class="game">
-          <img class="crest" src="/crest-14thclub.png" alt="The 14th Club crest" width="104">
+
           <div>
-            <h3>The 14th Club</h3>
+            <h3><img class="club-wordmark" src="/wordmark.png" alt="The 14th Club" width="280"></h3>
             <p class="sub">Real-swing golf for iPhone</p>
             <p>Grip your phone like a golf club, address the ball, and swing — the game
             reads your real tempo and release and turns them into ball flight. Eight
@@ -153,18 +146,9 @@
         <h3>Try it <span class="g">before you buy it.</span></h3>
         <p>Every game we make ships with a free demo that never expires — a real
         slice of the real game, no time limit, no strings, yours to keep. In
-        The 14th Club, that's the entire front nine at Herons Marsh. You should
+        The 14th Club, that's the entire front nine at Laurel Ridge. You should
         know a game is worth your money because you played it, not because an ad
         told you.</p>
-      </div>
-
-      <div class="principle">
-        <h3>Your data <span class="g">stays yours.</span></h3>
-        <p>We keep only the minimum that makes optional online play possible — an
-        anonymous player ID, the display name you choose, and the scores you post.
-        No account, no email, no tracking, nothing sold or shared. Your motion is
-        read on your device and never leaves it, and everything online can be
-        deleted from inside the game, any time.</p>
       </div>
     </div>
   </section>
